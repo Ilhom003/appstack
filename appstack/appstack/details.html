@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="d-flex w-100" id="root">
+        <nav class="sidebar h-100">
+            <div style="max-width: 260px; min-width: 260px; height: 100vh" class="sidebar__content">
+                <p class="sidebar__brand py-4 fs-4 text-light">
+                    <img style="color: white" src="./assets/img/logo/navbar-brand.svg" alt="logo" />
+                    AppStack
+                </p>
+                <ul class="sidebar__nav">
+                    <h5 class="sidebar__header">Dashboards</h5>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="index.html">Default</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./profile.html">Profile</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./settings.html">Settings</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./clients.html">Clients</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" data-bs-toggle="collapse" href="#collapseExample"
+                            href="./list.html">Projects</a>
+                    </li>
+                    <div style="  background-color: #293042;" class="collapse" id="collapseExample">
+                        <div style="  background-color: #293042;" class="card card-body">
+                            <a class="sidebar__link" href="./list.html">list</a>
+                            <a class="sidebar__link" href="./details.html">details</a>
+                        </div>
+                    </div>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" data-bs-toggle="collapse" href="#collapseExamp"
+                            href="./list.html">Forms</a>
+                    </li>
+                    <div style="  background-color: #293042;" class="collapse" id="collapseExamp">
+                        <div style="  background-color: #293042;" class="card card-body">
+                            <a class="sidebar__link" href="./layaut.html">Layaut</a>
+                            <a class="sidebar__link" href="./inputGrups.html">Input
+                                grups</a>
+                        </div>
+                    </div>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./SaaS.html">SaaS</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./social.html">Social</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="main h-100 w-100">
+            <nav class="d-flex bg-light shadow align-items-center py-2">
+                <button id="sidebar__toggler" style="width: 40px" class="form-control mx-3">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <form class="d-sm-inline-block">
+                    <div class="d-flex">
+                        <input class="search form-control" type="search" placeholder="search project..." />
+                        <button class="btn" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather text-muted feather-search align-middle">
+                                <circle cx="11" cy="11" r="8">
+                                </circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="dropdown mega__menu">
+                    <span class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                        Mega menu
+                    </span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Alerts</a></li>
+                        <li><a class="dropdown-item" href="#">Buttons</a></li>
+                        <li><a class="dropdown-item" href="#">Cards</a></li>
+                        <li><a class="dropdown-item" href="#">Carousel</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">General</a></li>
+                        <li><a class="dropdown-item" href="#">Grid</a></li>
+                    </ul>
+                </div>
+                <div style="margin-left: auto" class="sellectors d-flex align-items-center">
+                    <ul class="d-flex mb-0 align-items-center">
+                        <li class="mx-2 drop">
+                            <a href="#" class="drop-2" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
+                                <div class="position-relative">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-muted align-middle">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                        </path>
+                                    </svg>
+                                    <span style="font-size: 8px; color: aliceblue"
+                                        class="position-absolute top-0 start-100 translate-middle p-1 px-2 bg-primary border border-light rounded-circle">
+                                        4
+                                        <span class="visually-hidden">New
+                                            alerts</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <div style="position: absolute"
+                                class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0"
+                                aria-labelledby="messagesDropdown">
+                                <div class="dropdown-menu-header">
+                                    <div style="text-align: center" class="py-2">
+                                        4 New
+                                        Messages
+                                    </div>
+                                </div>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <img src="./assets/img/logo/Chris WOOD.png"
+                                                    class="avatar img-fluid rounded-circle" alt="Ashley Briggs" />
+                                            </div>
+                                            <div class="col-10 ps-2">
+                                                <div class="text-dark">
+                                                    Ashley
+                                                    Briggs
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    Nam
+                                                    pretium
+                                                    turpis
+                                                    et
+                                                    arcu.
+                                                    Duis
+                                                    arcu
+                                                    tortor.
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    15m
+                                                    ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <img src="./assets/img/logo/Chris WOOD.png"
+                                                    class="avatar img-fluid rounded-circle" alt="Carl Jenkins" />
+                                            </div>
+                                            <div class="col-10 ps-2">
+                                                <div class="text-dark">
+                                                    Carl
+                                                    Jenkins
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    Curabitur
+                                                    ligula
+                                                    sapien
+                                                    euismod
+                                                    vitae.
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    2h
+                                                    ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <img src="./assets/img/logo/Chris WOOD.png"
+                                                    class="avatar img-fluid rounded-circle" alt="Stacie Hall" />
+                                            </div>
+                                            <div class="col-10 ps-2">
+                                                <div class="text-dark">
+                                                    Stacie
+                                                    Hall
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    Pellentesque
+                                                    auctor
+                                                    neque
+                                                    nec
+                                                    urna.
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    4h
+                                                    ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <img src="./assets/img/logo/Chris WOOD.png"
+                                                    class="avatar img-fluid rounded-circle" alt="Bertha Martin" />
+                                            </div>
+                                            <div class="col-10 ps-2">
+                                                <div class="text-dark">
+                                                    Bertha
+                                                    Martin
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    Aenean
+                                                    tellus
+                                                    metus,
+                                                    bibendum
+                                                    sed,
+                                                    posuere
+                                                    ac,
+                                                    mattis
+                                                    non.
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    5h
+                                                    ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div style="text-align: center" class="dropdown-menu-footer py-2">
+                                    <a href="#" class="text-muted">Show
+                                        all
+                                        messages</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mx-2">
+                            <a href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+                                <div class="position-relative">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" color="black"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather text-muted feather-bell-off align-middle">
+                                        <path d="M13.73 21a2 2 0 0 1-3.46 0">
+                                        </path>
+                                        <path d="M18.63 13A17.89 17.89 0 0 1 18 8">
+                                        </path>
+                                        <path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14">
+                                        </path>
+                                        <path d="M18 8a6 6 0 0 0-9.33-5">
+                                        </path>
+                                        <line x1="1" y1="1" x2="23" y2="23">
+                                        </line>
+                                    </svg>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0"
+                                aria-labelledby="alertsDropdown">
+                                <div style="text-align: center" class="dropdown-menu-header py-2 text-muted">
+                                    4 New Notifications
+                                </div>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-alert-circle text-danger">
+                                                    <circle cx="12" cy="12" r="10">
+                                                    </circle>
+                                                    <line x1="12" y1="8" x2="12" y2="12">
+                                                    </line>
+                                                    <line x1="12" y1="16" x2="12.01" y2="16">
+                                                    </line>
+                                                </svg>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">
+                                                    Update
+                                                    completed
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    Restart
+                                                    server
+                                                    12
+                                                    to
+                                                    complete
+                                                    the
+                                                    update.
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    2h
+                                                    ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-bell text-warning">
+                                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9">
+                                                    </path>
+                                                    <path d="M13.73 21a2 2 0 0 1-3.46 0">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">
+                                                    Lorem
+                                                    ipsum
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    Aliquam
+                                                    ex
+                                                    eros,
+                                                    imperdiet
+                                                    vulputate
+                                                    hendrerit
+                                                    et.
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    6h
+                                                    ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-home text-primary">
+                                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+                                                    </path>
+                                                    <polyline points="9 22 9 12 15 12 15 22">
+                                                    </polyline>
+                                                </svg>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">
+                                                    Login
+                                                    from
+                                                    192.186.1.1
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    8h
+                                                    ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-user-plus text-success">
+                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                                    </path>
+                                                    <circle cx="8.5" cy="7" r="4">
+                                                    </circle>
+                                                    <line x1="20" y1="8" x2="20" y2="14">
+                                                    </line>
+                                                    <line x1="23" y1="11" x2="17" y2="11">
+                                                    </line>
+                                                </svg>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">
+                                                    New
+                                                    connection
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    Anna
+                                                    accepted
+                                                    your
+                                                    request.
+                                                </div>
+                                                <div class="text-muted small mt-1">
+                                                    12h
+                                                    ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-menu-footer py-2" style="text-align: center">
+                                    <a href="#" class="text-muted">Show
+                                        all
+                                        notifications</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mx-2">
+                            <a class="nav-flag" href="#" id="languageDropdown" data-bs-toggle="dropdown">
+                                <img src="./assets/img/flags/istockphoto-1174981237-170667a.jpg" width="24" height="24"
+                                    style="border-radius: 50%" alt="English" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/flags/us.png" alt="English" width="20"
+                                        class="align-middle me-1" />
+                                    <span class="align-middle">English</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/flags/uz.png" alt="Spanish" width="20"
+                                        class="align-middle me-1" />
+                                    <span class="align-middle">Uzbek</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/flags/ru.webp" alt="German" width="20"
+                                        class="align-middle me-1" />
+                                    <span class="align-middle">Russian</span>
+                                </a>
+                                <a href="#"> </a>
+                            </div>
+                        </li>
+                        <li style="margin-right: 10px" class="nav-item dropdown">
+                            <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
+                                data-bs-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-settings align-middle">
+                                    <circle cx="12" cy="12" r="3">
+                                    </circle>
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/img/logo/Chris WOOD.png" class="avatar img-fluid rounded-circle me-1"
+                                    alt="Chris Wood" />
+                                <span class="text-muted">Chris
+                                    Wood</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="pages-profile.html"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-user align-middle me-1">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                        </path>
+                                        <circle cx="12" cy="7" r="4">
+                                        </circle>
+                                    </svg>
+                                    Profile</a>
+                                <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-pie-chart align-middle me-1">
+                                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83">
+                                        </path>
+                                        <path d="M22 12A10 10 0 0 0 12 2v10z">
+                                        </path>
+                                    </svg>
+                                    Analytics</a>
+                                <div class="dropdown-divider">
+                                </div>
+                                <a class="dropdown-item" href="pages-settings.html">Settings
+                                    &amp; Privacy</a>
+                                <a class="dropdown-item" href="#">Help</a>
+                                <a class="dropdown-item" href="#">Sign out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main__content">
+                <div class="container-fluid">
+                    <div class="main__wrapper">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        var dropdownElementList = [].slice.call(
+            document.querySelectorAll(".dropdown-toggle")
+        );
+        var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+            return new bootstrap.Dropdown(dropdownToggleEl);
+        });
+    </script>
+    <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //    $("#datetimepicker-dashboard").datetimepicker({
+      //       inline: true,
+      //       sideBySide: false,
+      //       format: "L"
+      //    });
+      // });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script>
+        const ctx = document.getElementById("myChart").getContext("2d");
+        const myChart = new Chart(ctx, {
+            type: "doughnut",
+            data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                datasets: [
+                    {
+                        label: "# of Votes",
+                        data: [1, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            "rgba(255, 99, 132, 0.2)",
+                            "rgba(54, 162, 235, 0.2)",
+                            "rgba(255, 206, 86, 0.2)",
+                            "rgba(75, 192, 192, 0.2)",
+                            "rgba(153, 102, 255, 0.2)",
+                            "rgba(255, 159, 64, 0.2)",
+                        ],
+                        borderColor: [
+                            "rgba(255, 99, 132, 1)",
+                            "rgba(54, 162, 235, 1)",
+                            "rgba(255, 206, 86, 1)",
+                            "rgba(75, 192, 192, 1)",
+                            "rgba(153, 102, 255, 1)",
+                            "rgba(255, 159, 64, 1)",
+                        ],
+                        borderWidth: 1,
+                    },
+                ],
+            },
+            //  options: {
+            //      scales: {
+            //          y: {
+            //              beginAtZero: true
+            //          }
+            //      }
+            //  }
+        });
+    </script>
+</body>
+
+</html>

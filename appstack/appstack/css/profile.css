@@ -1,0 +1,27 @@
+.btn-secondary {
+    color: #6c757d;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.secondary:focus {
+    color: #6c757d !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+    box-shadow: none;
+}
+
+.dropstart .dropdown-toggle::before {
+    display: none !important;
+    margin-right: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid transparent;
+    border-right: 0.3em solid;
+    border-bottom: 0.3em solid transparent;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow:none !important;
+}

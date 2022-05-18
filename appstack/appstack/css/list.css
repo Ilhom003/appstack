@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project {
+    height: 210vh;
+    background-color: rgba(0, 0, 0, 0.164);
+}
